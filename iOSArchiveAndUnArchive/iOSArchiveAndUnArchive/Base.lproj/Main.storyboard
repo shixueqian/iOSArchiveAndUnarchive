@@ -18,73 +18,142 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKN-zz-Qco">
-                                <rect key="frame" x="142" y="20" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKN-zz-Qco">
+                                <rect key="frame" x="142" y="40" width="92" height="30"/>
                                 <state key="normal" title="普通数组归档"/>
+                                <connections>
+                                    <action selector="onClickBtn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xg1-qF-gEw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjN-HU-HI2">
-                                <rect key="frame" x="143" y="58" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjN-HU-HI2">
+                                <rect key="frame" x="141.5" y="80" width="92" height="30"/>
                                 <state key="normal" title="普通数组解档"/>
+                                <connections>
+                                    <action selector="onClickBtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CV4-61-l6z"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlv-nV-kQ6">
-                                <rect key="frame" x="142" y="99" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdW-eX-maT">
+                                <rect key="frame" x="80" y="120" width="215" height="30"/>
+                                <state key="normal" title="因为文件夹不存在导致归档失败"/>
+                                <connections>
+                                    <action selector="onClickBtn1_2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZQ-wn-LVh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBY-gY-mL9">
+                                <rect key="frame" x="88" y="160" width="199" height="30"/>
+                                <state key="normal" title="因为没有写权限导致归档失败"/>
+                                <connections>
+                                    <action selector="onClickBtn1_3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pw1-D9-AGF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlv-nV-kQ6">
+                                <rect key="frame" x="142" y="200" width="92" height="30"/>
                                 <state key="normal" title="普通字典归档"/>
+                                <connections>
+                                    <action selector="onClickBtn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxy-de-er4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-Kx-omg">
-                                <rect key="frame" x="142" y="137" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyd-Kx-omg">
+                                <rect key="frame" x="142" y="240" width="92" height="30"/>
                                 <state key="normal" title="普通字典解档"/>
+                                <connections>
+                                    <action selector="onClickBtn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Bz-Ze-Tzi"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYT-cf-VFS">
-                                <rect key="frame" x="141" y="175" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYT-cf-VFS">
+                                <rect key="frame" x="141" y="280" width="92" height="30"/>
                                 <state key="normal" title="多个对象归档"/>
+                                <connections>
+                                    <action selector="onClickBtn5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TL7-UG-cw7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOX-OD-5ig">
-                                <rect key="frame" x="141" y="213" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOX-OD-5ig">
+                                <rect key="frame" x="141" y="320" width="92" height="30"/>
                                 <state key="normal" title="多个对象解档"/>
+                                <connections>
+                                    <action selector="onClickBtn6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkG-Sf-efi"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5a-JI-Pv1">
-                                <rect key="frame" x="133" y="289" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5a-JI-Pv1">
+                                <rect key="frame" x="133" y="400" width="108" height="30"/>
                                 <state key="normal" title="自定义对象解档"/>
+                                <connections>
+                                    <action selector="onClickBtn8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VV-0b-gIG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj4-Tp-s4M">
-                                <rect key="frame" x="133" y="251" width="108" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj4-Tp-s4M">
+                                <rect key="frame" x="133" y="360" width="108" height="30"/>
                                 <state key="normal" title="自定义对象归档"/>
+                                <connections>
+                                    <action selector="onClickBtn7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZk-rc-gDA"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sZ-Id-bZQ">
-                                <rect key="frame" x="119" y="366" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sZ-Id-bZQ">
+                                <rect key="frame" x="119" y="480" width="138" height="30"/>
                                 <state key="normal" title="自定义对象数组解档"/>
+                                <connections>
+                                    <action selector="onClickBtn10:" destination="BYZ-38-t0r" eventType="touchUpInside" id="82f-bq-eTm"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-ji-aeA">
-                                <rect key="frame" x="118" y="328" width="138" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UmQ-ji-aeA">
+                                <rect key="frame" x="118" y="440" width="138" height="30"/>
                                 <state key="normal" title="自定义对象数组归档"/>
+                                <connections>
+                                    <action selector="onClickBtn9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHy-JS-TOZ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if5-3V-CuV">
-                                <rect key="frame" x="50" y="442" width="276" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="if5-3V-CuV">
+                                <rect key="frame" x="50" y="560" width="276" height="30"/>
                                 <state key="normal" title="自定义对象里面有另一个自定义对象解档"/>
+                                <connections>
+                                    <action selector="onClickBtn12:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMn-zb-rQ6"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBO-UX-R0O">
-                                <rect key="frame" x="50" y="404" width="276" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBO-UX-R0O">
+                                <rect key="frame" x="50" y="520" width="276" height="30"/>
                                 <state key="normal" title="自定义对象里面有另一个自定义对象归档"/>
+                                <connections>
+                                    <action selector="onClickBtn11:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3nP-rT-wb8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qBY-gY-mL9" firstAttribute="top" secondItem="rdW-eX-maT" secondAttribute="bottom" constant="10" id="0if-UG-RZY"/>
+                            <constraint firstItem="nlv-nV-kQ6" firstAttribute="top" secondItem="qBY-gY-mL9" secondAttribute="bottom" constant="10" id="5JN-oU-cUH"/>
+                            <constraint firstItem="gj4-Tp-s4M" firstAttribute="top" secondItem="vOX-OD-5ig" secondAttribute="bottom" constant="10" id="BLc-ob-zWB"/>
+                            <constraint firstItem="if5-3V-CuV" firstAttribute="top" secondItem="uBO-UX-R0O" secondAttribute="bottom" constant="10" id="Ben-ST-2J7"/>
+                            <constraint firstItem="1sZ-Id-bZQ" firstAttribute="top" secondItem="UmQ-ji-aeA" secondAttribute="bottom" constant="10" id="DFf-Vd-MMt"/>
+                            <constraint firstItem="UmQ-ji-aeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FmS-V9-AJQ"/>
+                            <constraint firstItem="n5a-JI-Pv1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gl0-nV-iHF"/>
+                            <constraint firstItem="NKN-zz-Qco" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JXk-du-C3e"/>
+                            <constraint firstItem="uBO-UX-R0O" firstAttribute="top" secondItem="1sZ-Id-bZQ" secondAttribute="bottom" constant="10" id="M7d-bc-Cso"/>
+                            <constraint firstItem="uBO-UX-R0O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MDX-mI-1xc"/>
+                            <constraint firstItem="NKN-zz-Qco" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="MXG-kR-TwG"/>
+                            <constraint firstItem="qBY-gY-mL9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QBL-xE-PJM"/>
+                            <constraint firstItem="wYT-cf-VFS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QP8-gh-WMu"/>
+                            <constraint firstItem="wYT-cf-VFS" firstAttribute="top" secondItem="Cyd-Kx-omg" secondAttribute="bottom" constant="10" id="RSB-6L-78f"/>
+                            <constraint firstItem="Cyd-Kx-omg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vad-0r-Kgn"/>
+                            <constraint firstItem="1sZ-Id-bZQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XbG-r7-c4P"/>
+                            <constraint firstItem="rdW-eX-maT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dI3-Je-dmy"/>
+                            <constraint firstItem="vOX-OD-5ig" firstAttribute="top" secondItem="wYT-cf-VFS" secondAttribute="bottom" constant="10" id="ett-40-wXC"/>
+                            <constraint firstItem="Cyd-Kx-omg" firstAttribute="top" secondItem="nlv-nV-kQ6" secondAttribute="bottom" constant="10" id="gRQ-dq-vZ3"/>
+                            <constraint firstItem="bjN-HU-HI2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j9w-8N-sat"/>
+                            <constraint firstItem="rdW-eX-maT" firstAttribute="top" secondItem="bjN-HU-HI2" secondAttribute="bottom" constant="10" id="mTW-Lu-huo"/>
+                            <constraint firstItem="if5-3V-CuV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nBF-Hr-fbY"/>
+                            <constraint firstItem="UmQ-ji-aeA" firstAttribute="top" secondItem="n5a-JI-Pv1" secondAttribute="bottom" constant="10" id="oow-n3-iZq"/>
+                            <constraint firstItem="n5a-JI-Pv1" firstAttribute="top" secondItem="gj4-Tp-s4M" secondAttribute="bottom" constant="10" id="t2c-eR-8xB"/>
+                            <constraint firstItem="vOX-OD-5ig" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uix-7w-vPG"/>
+                            <constraint firstItem="gj4-Tp-s4M" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xeS-va-aEf"/>
+                            <constraint firstItem="nlv-nV-kQ6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yD2-KM-d5g"/>
+                            <constraint firstItem="bjN-HU-HI2" firstAttribute="top" secondItem="NKN-zz-Qco" secondAttribute="bottom" constant="10" id="zUe-AC-0zc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="60" y="17"/>
         </scene>
     </scenes>
 </document>

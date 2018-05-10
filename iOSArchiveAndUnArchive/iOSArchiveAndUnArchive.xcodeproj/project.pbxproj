@@ -13,6 +13,8 @@
 		0426481C20A002F6008B0D73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0426481B20A002F6008B0D73 /* Assets.xcassets */; };
 		0426481F20A002F6008B0D73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0426481D20A002F6008B0D73 /* LaunchScreen.storyboard */; };
 		0426482220A002F6008B0D73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426482120A002F6008B0D73 /* main.m */; };
+		0426482A20A00E7C008B0D73 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426482920A00E7C008B0D73 /* Person.m */; };
+		0426482D20A0282C008B0D73 /* Pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0426482C20A0282C008B0D73 /* Pet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		0426481E20A002F6008B0D73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0426482020A002F6008B0D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0426482120A002F6008B0D73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0426482820A00E7C008B0D73 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0426482920A00E7C008B0D73 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0426482B20A0282C008B0D73 /* Pet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pet.h; sourceTree = "<group>"; };
+		0426482C20A0282C008B0D73 /* Pet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				0426481D20A002F6008B0D73 /* LaunchScreen.storyboard */,
 				0426482020A002F6008B0D73 /* Info.plist */,
 				0426482120A002F6008B0D73 /* main.m */,
+				0426482820A00E7C008B0D73 /* Person.h */,
+				0426482920A00E7C008B0D73 /* Person.m */,
+				0426482B20A0282C008B0D73 /* Pet.h */,
+				0426482C20A0282C008B0D73 /* Pet.m */,
 			);
 			path = iOSArchiveAndUnArchive;
 			sourceTree = "<group>";
@@ -144,7 +154,9 @@
 			files = (
 				0426481720A002F6008B0D73 /* ViewController.m in Sources */,
 				0426482220A002F6008B0D73 /* main.m in Sources */,
+				0426482A20A00E7C008B0D73 /* Person.m in Sources */,
 				0426481420A002F6008B0D73 /* AppDelegate.m in Sources */,
+				0426482D20A0282C008B0D73 /* Pet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9XE43A3CX;
 				INFOPLIST_FILE = iOSArchiveAndUnArchive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -293,6 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9XE43A3CX;
 				INFOPLIST_FILE = iOSArchiveAndUnArchive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
